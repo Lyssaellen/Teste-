@@ -1,0 +1,727 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f3f6fa;
+
+    color: #10284b;
+}
+
+
+/* =========================================
+   CARD PRINCIPAL
+========================================= */
+
+.auth-card {
+
+    width: 92%;
+    max-width: 1100px;
+
+    min-height: 640px;
+
+    display: flex;
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(16, 40, 75, 0.10);
+}
+
+
+/* =========================================
+   LATERAL AZUL MARINHO
+========================================= */
+
+.auth-banner {
+
+    width: 42%;
+
+    min-height: 640px;
+
+    padding: 40px 36px;
+
+    background: #10284b;
+
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================
+   LOGO + NOME DA BIBLIOTECA
+========================================= */
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* Área do logo */
+
+.brand-logo {
+
+    width: 70px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* IMAGEM DO SENAI */
+
+.brand-logo img {
+
+    width: 70px;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* Informações */
+
+.brand-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.brand-title {
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+
+.brand-sub {
+
+    font-size: 13px;
+
+    color: #aebbd0;
+}
+
+
+/* =========================================
+   TEXTO DA LATERAL
+========================================= */
+
+.banner-content {
+
+    margin-top: auto;
+
+    margin-bottom: 30px;
+}
+
+
+.banner-content h1 {
+
+    font-size: 34px;
+
+    line-height: 1.1;
+
+    margin-bottom: 14px;
+
+    color: #ffffff;
+}
+
+
+.banner-content p {
+
+    max-width: 330px;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    color: #f0f3f8;
+}
+
+
+/* =========================================
+   ILUSTRAÇÃO
+========================================= */
+
+.banner-illustration {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    margin: 10px 0 30px;
+}
+
+
+.banner-illustration img {
+
+    width: 170px;
+
+    max-height: 150px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================================
+   SEGURANÇA
+========================================= */
+
+.security-badge {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: auto;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+
+.security-badge svg {
+
+    width: 20px;
+
+    height: 20px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+
+.auth-form-container {
+
+    width: 58%;
+
+    padding: 55px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.auth-form-container h2 {
+
+    font-size: 26px;
+
+    color: #10284b;
+
+    margin-bottom: 7px;
+}
+
+
+.subtitle {
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #66758d;
+
+    margin-bottom: 28px;
+}
+
+
+/* =========================================
+   LINHAS DO FORMULÁRIO
+========================================= */
+
+.form-row {
+
+    display: flex;
+
+    gap: 20px;
+
+    width: 100%;
+}
+
+
+.form-row .form-group {
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+/* =========================================
+   CAMPOS
+========================================= */
+
+.form-group {
+
+    width: 100%;
+
+    margin-bottom: 18px;
+}
+
+
+.form-group label {
+
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #10284b;
+
+    margin-bottom: 7px;
+}
+
+
+/* =========================================
+   INPUT + ÍCONE
+========================================= */
+
+.input-icon-wrapper {
+
+    position: relative;
+
+    width: 100%;
+}
+
+
+.input-icon-wrapper input {
+
+    width: 100%;
+
+    height: 46px;
+
+    padding: 0 44px;
+
+    border: 1px solid #c9d4e3;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #10284b;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+.input-icon-wrapper input::placeholder {
+
+    color: #8c9ab0;
+}
+
+
+.input-icon-wrapper input:focus {
+
+    border-color: #2864e8;
+
+    box-shadow: 0 0 0 3px rgba(40, 100, 232, 0.08);
+}
+
+
+/* =========================================
+   ÍCONE DOS CAMPOS
+========================================= */
+
+.field-icon {
+
+    position: absolute;
+
+    left: 15px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 17px;
+
+    height: 17px;
+
+    color: #7c8ba1;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   MOSTRAR / OCULTAR SENHA
+========================================= */
+
+.toggle-password {
+
+    position: absolute;
+
+    right: 14px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 18px;
+
+    height: 18px;
+
+    color: #7c8ba1;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   OPÇÕES
+========================================= */
+
+.form-options {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin: 4px 0 20px;
+}
+
+
+.checkbox-container {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    font-size: 14px;
+
+    color: #53647d;
+
+    cursor: pointer;
+}
+
+
+.checkbox-container input {
+
+    width: 17px;
+
+    height: 17px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.inline-link,
+.forgot-link,
+.switch-auth a,
+.back-link {
+
+    color: #1457df;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+.inline-link:hover,
+.forgot-link:hover,
+.switch-auth a:hover,
+.back-link:hover {
+
+    text-decoration: underline;
+}
+
+
+.forgot-link {
+
+    font-size: 14px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   BOTÃO
+========================================= */
+
+.btn-primary {
+
+    width: 100%;
+
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2864e8;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.btn-primary svg {
+
+    width: 17px;
+
+    height: 17px;
+}
+
+
+.btn-primary:hover {
+
+    background: #1f55cc;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   DIVISOR "OU"
+========================================= */
+
+.divider {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 30px 0;
+}
+
+
+.divider::before,
+.divider::after {
+
+    content: "";
+
+    height: 1px;
+
+    flex: 1;
+
+    background: #dce3ec;
+}
+
+
+.divider span {
+
+    color: #718096;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   TEXTO ENTRE PÁGINAS
+========================================= */
+
+.switch-auth {
+
+    text-align: center;
+
+    color: #66758d;
+
+    font-size: 14px;
+
+    margin-top: 16px;
+}
+
+
+.back-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .auth-card {
+
+        width: 95%;
+
+        flex-direction: column;
+
+        margin: 20px 0;
+    }
+
+
+    .auth-banner {
+
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 35px;
+    }
+
+
+    .banner-content {
+
+        margin-top: 60px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .banner-illustration {
+
+        display: none;
+    }
+
+
+    .security-badge {
+
+        margin-top: 30px;
+    }
+
+
+    .auth-form-container {
+
+        width: 100%;
+
+        padding: 40px 35px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+
+        align-items: flex-start;
+    }
+
+
+    .auth-card {
+
+        width: 100%;
+
+        min-height: 100vh;
+
+        margin: 0;
+
+        border-radius: 0;
+    }
+
+
+    .auth-banner {
+
+        padding: 30px 25px;
+    }
+
+
+    .auth-form-container {
+
+        padding: 35px 25px;
+    }
+
+
+    .form-row {
+
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+
+    .form-options {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .banner-content h1 {
+
+        font-size: 30px;
+    }
+
+}

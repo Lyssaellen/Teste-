@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SENAI - Recuperar Senha</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="geral.css">
+</head>
+<body>
+
+  <div class="auth-card">
+
+    <!-- Banner Esquerdo -->
+    <div class="auth-banner">
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                <img src="img/senai.jpg" alt="SENAI">
+            </div>
+
+            <div class="brand-info">
+                <span class="brand-title">Biblioteca ADM</span>
+                <span class="brand-sub">Painel do Aluno</span>
+            </div>
+
+        </div>
+
+
+        <div class="banner-content">
+
+            <h1>Recuperar senha</h1>
+
+            <p>
+                Informe seu email para receber instruções de redefinição de senha.
+            </p>
+
+        </div>
+
+
+        <div class="security-badge">
+
+            <i data-lucide="shield-check"></i>
+
+            <span>
+                Seus dados estão protegidos com segurança.
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- Formulário Direito -->
+    <div class="auth-form-container">
+
+        <h2>Redefinir senha</h2>
+
+        <p class="subtitle">
+            Digite o email associado à sua conta e enviaremos
+            um link para redefinir sua senha.
+        </p>
+
+
+        <form id="recoverForm" onsubmit="handleRecovery(event)">
+
+            <div class="form-group">
+
+                <label for="recoverEmail">
+                    Email
+                </label>
+
+                <div class="input-icon-wrapper">
+
+                    <i 
+                        data-lucide="mail"
+                        class="field-icon">
+                    </i>
+
+                    <input
+                        type="email"
+                        id="recoverEmail"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <button type="submit" class="btn-primary">
+
+                <i data-lucide="send"></i>
+
+                Enviar link de recuperação
+
+            </button>
+
+        </form>
+
+
+        <div class="divider">
+            <span>ou</span>
+        </div>
+
+
+        <p class="switch-auth">
+
+            <a href="login.html" class="back-link">
+
+                <i 
+                    data-lucide="arrow-left"
+                    size="16">
+                </i>
+
+                Voltar para o login
+
+            </a>
+
+        </p>
+
+    </div>
+
+</div>
+
+  <script src="geral.js"></script>
+</body>
+</html>
